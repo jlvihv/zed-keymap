@@ -93,6 +93,7 @@
   {
     "context": "Editor && (showing_code_actions || showing_completions)",
     "bindings": {
+      // 使用 tab 键切换代码建议
       "shift-tab": "editor::ContextMenuPrev",
       "tab": "editor::ContextMenuNext"
     }
@@ -100,13 +101,14 @@
   {
     "context": "Terminal",
     "bindings": {
-      // 关闭终端
+      // 打开 / 关闭终端
       "ctrl-`": "workspace::ToggleBottomDock"
     }
   },
   {
     "context": "ConversationEditor > Editor",
     "bindings": {
+      // 给 AI 助手发送消息
       "alt-enter": "assistant::Assist"
     }
   }
